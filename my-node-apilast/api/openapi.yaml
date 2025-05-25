@@ -1,0 +1,164 @@
+openapi: 3.0.0
+info:
+  description: Простое API для мессенджера
+  title: Messenger API
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /messages:
+    get:
+      operationId: messagesGET
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/_messages_get_200_response_inner'
+                type: array
+          description: Список сообщений
+      summary: Получить все сообщения
+      x-eov-operation-handler: controllers/DefaultController
+    post:
+      operationId: messagesPOST
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_messages_post_request'
+        required: true
+      responses:
+        "201":
+          description: Сообщение отправлено
+      summary: Отправить сообщение
+      x-eov-operation-handler: controllers/DefaultController
+  /messages/{id}:
+    delete:
+      operationId: messagesIdDELETE
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: Сообщение удалено
+      summary: Удалить сообщение
+      x-eov-operation-handler: controllers/DefaultController
+    put:
+      operationId: messagesIdPUT
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_messages__id__put_request'
+        required: true
+      responses:
+        "200":
+          description: Сообщение обновлено
+      summary: Обновить сообщение
+      x-eov-operation-handler: controllers/DefaultController
+  /users:
+    post:
+      operationId: usersPOST
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/_users_post_request'
+        required: true
+      responses:
+        "201":
+          description: Пользователь добавлен
+      summary: Добавить пользователя
+      x-eov-operation-handler: controllers/DefaultController
+  /users/{id}:
+    delete:
+      operationId: usersIdDELETE
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          type: integer
+        style: simple
+      responses:
+        "204":
+          description: Пользователь удален
+      summary: Удалить пользователя
+      x-eov-operation-handler: controllers/DefaultController
+components:
+  schemas:
+    _messages__id__put_request:
+      properties:
+        msg:
+          description: "Обновленное сообщение, закодированное в Base64"
+          type: string
+        fromUserId:
+          description: Новый ID отправителя
+          type: integer
+        toUserId:
+          description: Новый ID получателя
+          type: integer
+      required:
+      - fromUserId
+      - msg
+      - toUserId
+      type: object
+    _messages_post_request:
+      properties:
+        msg:
+          description: "Сообщение, закодированное в Base64"
+          type: string
+        fromUserId:
+          description: ID отправителя
+          type: integer
+        toUserId:
+          description: ID получателя
+          type: integer
+      required:
+      - fromUserId
+      - msg
+      - toUserId
+      type: object
+    _messages_get_200_response_inner:
+      example:
+        msg: msg
+        fromUserId: 6
+        id: 0
+        toUserId: 1
+      properties:
+        id:
+          type: integer
+        msg:
+          type: string
+        fromUserId:
+          type: integer
+        toUserId:
+          type: integer
+      type: object
+    _users_post_request:
+      properties:
+        username:
+          description: Имя пользователя
+          type: string
+        password:
+          description: "Пароль, закодированный в Base64"
+          type: string
+      required:
+      - password
+      - username
+      type: object

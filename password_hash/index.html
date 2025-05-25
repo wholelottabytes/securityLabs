@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>WASM Custom Hash</title>
+</head>
+
+<body>
+	<h1>Custom Hash</h1>
+	<input id="textInput" placeholder="Введите текст" />
+	<button onclick="hash()">Hash</button>
+	<pre id="result"></pre>
+
+	<script src="hash.js"></script>
+	<script>
+		let Module;
+		createModule().then(mod => {
+			Module = mod;
+		});
+
+		function hash() {
+			const input = document.getElementById('textInput').value;
+
+			const inputPtr = Module._malloc(Module.lengthBytesUTF8(input) + 1);
+			const outputPtr = Module._malloc(65);
+
+			Module.stringToUTF8(input, inputPtr, Module.lengthBytesUTF8(input) + 1);
+			Module._hash_password_wrapper(inputPtr, outputPtr);
+
+			const output = Module.UTF8ToString(outputPtr);
+			document.getElementById('result').innerText = output;
+
+			Module._free(inputPtr);
+			Module._free(outputPtr);
+		}
+	</script>
+</body>
+
+</html>

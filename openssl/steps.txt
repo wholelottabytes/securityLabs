@@ -1,0 +1,56 @@
+генерация
+# Вывести список доступных кривых:
+openssl ecparam -list_curves                                      \
+    # – list of supported curves :contentReference[oaicite:0]{index=0}
+
+# Например, выбрать prime256v1 и создать ключ:
+openssl ecparam -name prime256v1 -genkey -noout -out private.key   \
+    # – генерирует EC-ключ на кривой prime256v1 :contentReference[oaicite:1]{index=1}
+
+создание самоподписанного сертификата
+openssl req -new -x509 \
+    -key private.key \
+    -sha256 \
+    -days 365 \
+    -subj "/C=RU/ST=Москва/L=Москва/O=MyOrg/CN=example.local" \
+    -out selfsigned.crt
+    # – создаёт X.509 сертификат, подписанный собственным ключом :contentReference[oaicite:2]{index=2}
+
+
+запрос на подпись
+openssl req -new \
+    -key private.key \
+    -sha256 \
+    -subj "/C=RU/ST=Москва/L=Москва/O=MyOrg/CN=server.example.local" \
+    -out server.csr
+    # – формирует CSR (PKCS#10) для TLS‑сервера :contentReference[oaicite:3]{index=3}
+
+
+подпись
+openssl x509 -req \
+    -in server.csr \
+    -CA selfsigned.crt \
+    -CAkey private.key \
+    -CAcreateserial \
+    -sha256 \
+    -days 365 \
+    -out server.crt
+    # – подписывает CSR, выдавая сертификат серверу :contentReference[oaicite:4]{index=4}
+добавление сертификата в хранилище
+sudo cp selfsigned.crt /usr/local/share/ca-certificates/my-root.crt
+sudo update-ca-certificates
+
+
+
+вторая попытка 
+openssl req -x509 -newkey ec:<(openssl ecparam -name prime256v1) -days 365 -nodes -keyout ca.key -out ca.crt -config ca.conf
+
+ca создал
+
+новый серв с utf
+openssl ecparam -name prime256v1 -genkey -noout -out server.key
+openssl req -new -key server.key -out server.csr -config server.conf -utf8
+
+
+подпись через v3_ext
+openssl x509 -req -in server.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out server.crt -days 365 -sha256 -extfile v3_ext.cnf -extensions v3_ext
