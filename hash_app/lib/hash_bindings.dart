@@ -65,7 +65,7 @@ class HashLibrary {
 
     print('HashLibrary: Detecting platform...');
     if (Platform.isAndroid) {
-      libraryPath = 'android/app/src/main/jniLibs/arm64-v8a/libhash_lib.so';
+      libraryPath = 'libhash_lib.so';
     } else if (Platform.isLinux) {
       libraryPath = 'lib/native_libs/linux/libhash_lib.so';
     } else if (Platform.isWindows) {
@@ -82,7 +82,7 @@ class HashLibrary {
     print('HashLibrary: Library file exists at primary path: ${file.existsSync()}');
 
     try {
-      _lib = DynamicLibrary.open('libhash_lib.so');
+      _lib = DynamicLibrary.open(libraryPath);
       print('HashLibrary: Successfully loaded library from primary path!');
     } catch (e) {
       print('HashLibrary: Failed to load from primary path ($libraryPath): $e');
