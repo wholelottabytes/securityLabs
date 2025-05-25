@@ -54,3 +54,11 @@
 {"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2025-05-23T19:33:55.548Z"}
 {"level":"error","service":"user-service","timestamp":"2025-05-23T19:33:55.547Z"}
 {"level":"error","service":"user-service","timestamp":"2025-05-23T19:33:55.549Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2025-05-25T11:41:53.677Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2025-05-25T11:41:53.678Z"}
+{"level":"error","service":"user-service","timestamp":"2025-05-25T11:41:53.678Z"}
+{"level":"error","service":"user-service","timestamp":"2025-05-25T11:41:53.679Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2025-05-25T12:44:52.156Z"}
+{"level":"error","message":"Express Server failure","service":"user-service","timestamp":"2025-05-25T12:44:52.158Z"}
+{"level":"error","service":"user-service","timestamp":"2025-05-25T12:44:52.157Z"}
+{"level":"error","service":"user-service","timestamp":"2025-05-25T12:44:52.159Z"}

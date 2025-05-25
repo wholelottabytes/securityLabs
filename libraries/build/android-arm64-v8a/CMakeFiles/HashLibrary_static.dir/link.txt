@@ -1,0 +1,2 @@
+/home/a/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libhash_lib_static.a CMakeFiles/HashLibrary_static.dir/src/hash_lib.c.o
+/home/a/Android/Sdk/ndk/27.1.12297006/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libhash_lib_static.a

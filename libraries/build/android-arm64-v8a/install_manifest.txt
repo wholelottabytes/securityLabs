@@ -1,0 +1,4 @@
+/home/a/Downloads/Telegram Desktop/kal/install/android-arm64-v8a/lib/libhash_lib.so
+/home/a/Downloads/Telegram Desktop/kal/install/android-arm64-v8a/include/hash_lib.h
+/home/a/Downloads/Telegram Desktop/kal/install/android-arm64-v8a/lib/libhash_lib_static.a
+/home/a/Downloads/Telegram Desktop/kal/install/android-arm64-v8a/include/hash_lib.h

@@ -1,0 +1,8 @@
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/HashLibrary_shared.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/HashLibrary_static.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/edit_cache.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/rebuild_cache.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/list_install_components.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/install.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/install/local.dir
+/home/a/Downloads/Telegram Desktop/kal/build/linux-x86_64/CMakeFiles/install/strip.dir

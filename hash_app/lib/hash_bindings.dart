@@ -64,7 +64,9 @@ class HashLibrary {
     List<String> attemptPaths = [];
 
     print('HashLibrary: Detecting platform...');
-    if (Platform.isLinux) {
+    if (Platform.isAndroid) {
+      libraryPath = 'android/app/src/main/jniLibs/arm64-v8a/libhash_lib.so';
+    } else if (Platform.isLinux) {
       libraryPath = 'lib/native_libs/linux/libhash_lib.so';
     } else if (Platform.isWindows) {
       libraryPath = 'lib/native_libs/windows/libhash_lib.dll';
@@ -80,18 +82,14 @@ class HashLibrary {
     print('HashLibrary: Library file exists at primary path: ${file.existsSync()}');
 
     try {
-      _lib = DynamicLibrary.open(libraryPath);
+      _lib = DynamicLibrary.open('libhash_lib.so');
       print('HashLibrary: Successfully loaded library from primary path!');
-      // Если ты хочешь поддерживать fallback пути из твоего оригинального кода,
-      // их нужно будет добавить сюда. Для краткости, здесь только основная логика.
     } catch (e) {
       print('HashLibrary: Failed to load from primary path ($libraryPath): $e');
-      // Добавь сюда логику fallback-загрузки, если она нужна, как в твоем примере.
-      // Например:
-      // String fallbackPath = ...; try { _lib = DynamicLibrary.open(fallbackPath); ... } catch ...
       throw Exception('Failed to load hash library from $libraryPath. Error: $e. Attempted paths: $attemptPaths');
     }
   }
+
 
   void _bindFunctions() {
     try {

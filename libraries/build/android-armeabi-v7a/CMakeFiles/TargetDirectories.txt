@@ -1,0 +1,8 @@
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/HashLibrary_shared.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/HashLibrary_static.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/list_install_components.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/install.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/install/local.dir
+/home/a/Downloads/Telegram Desktop/kal/build/android-armeabi-v7a/CMakeFiles/install/strip.dir

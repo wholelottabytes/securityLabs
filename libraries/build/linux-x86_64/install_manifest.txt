@@ -1,0 +1,6 @@
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/lib/libhash_lib.so.1.0.0
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/lib/libhash_lib.so.1
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/lib/libhash_lib.so
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/include/hash_lib.h
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/lib/libhash_lib_static.a
+/home/a/Downloads/Telegram Desktop/kal/install/linux-x86_64/include/hash_lib.h
