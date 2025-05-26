@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "/home/a/Documents/flutter/acseleromtr/android/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/home/a/Android/Sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/x86",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/home/a/Android/Sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/x86",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "accelerometerjni::@6890427a1f51a3e7e1df": {
+      "artifactName": "accelerometerjni",
+      "abi": "x86",
+      "output": "/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so",
+      "runtimeFiles": []
+    }
+  }
+}

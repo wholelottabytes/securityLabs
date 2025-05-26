@@ -1,0 +1,3 @@
+/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/arm64-v8a/CMakeFiles/accelerometerjni.dir
+/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/arm64-v8a/CMakeFiles/rebuild_cache.dir

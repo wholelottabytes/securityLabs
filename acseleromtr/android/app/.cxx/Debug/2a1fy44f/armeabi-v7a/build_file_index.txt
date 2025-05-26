@@ -1,0 +1,1 @@
+/home/a/Documents/flutter/acseleromtr/android/app/src/main/cpp/CMakeLists.txt

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/a/Documents/flutter/acseleromtr/android/app/.cxx/Debug/2a1fy44f/armeabi-v7a",
+  "command": "/home/a/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --sysroot=/home/a/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Daccelerometerjni_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o -c /home/a/Documents/flutter/acseleromtr/android/app/src/main/cpp/accelerometer_jni.cpp",
+  "file": "/home/a/Documents/flutter/acseleromtr/android/app/src/main/cpp/accelerometer_jni.cpp"
+}
+]

@@ -1,0 +1,11 @@
+# ninja log v5
+0	139	1748293546888203921	CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o	2d34963f6a081381
+139	183	1748293546931203390	/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so	a97fb43973955d74
+1	117	1748293830969860285	CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o	2d34963f6a081381
+117	151	1748293831004859613	/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so	a97fb43973955d74
+1	171	1748294392393406646	CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o	2d34963f6a081381
+171	209	1748294392432406053	/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so	a97fb43973955d74
+1	181	1748294970163091004	CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o	2d34963f6a081381
+181	237	1748294970217090257	/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so	a97fb43973955d74
+0	134	1748295290626709336	CMakeFiles/accelerometerjni.dir/accelerometer_jni.cpp.o	2d34963f6a081381
+134	176	1748295290668708767	/home/a/Documents/flutter/acseleromtr/build/app/intermediates/cxx/Debug/2a1fy44f/obj/x86/libaccelerometerjni.so	a97fb43973955d74
